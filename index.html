@@ -10,25 +10,39 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>vendingMachine</title>
+  <title>Get ur Ghosts</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
+    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select d-flex justify-content-between">
       <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+        <!-- https://media4.giphy.com/media/fnfONXQS7MmHi2AcsJ/giphy.gif?cid=790b76112a2b403eb1b753875e606082c5ca75214189fb4e&rid=giphy.gif&ct=s -->
+        <!-- https://media4.giphy.com/media/YARUMKaGd8cRG/giphy.gif?cid=790b7611b3e3ff3b503307354fbec4552c49b03d5f664703&rid=giphy.gif&ct=g -->
+        <img src="https://media3.giphy.com/media/7281x5yOLwyiRqWAM7/giphy.gif?cid=790b7611b4ad56e002dc81a66f38445d1bab9a525f06c0a9&rid=giphy.gif&ct=s" height="45" alt=""
           loading="lazy">
-        <span class="ms-2">vendingMachine</span>
+        <span class="ms-2">Get ur Ghosts</span>
       </a>
+      <div class="me-3 mt-1">
+        <p class="d-flex justify-content-between">Plasm Count: <span id="plasm-count">0</span></p>
+        <button class="btn btn-info" onclick="app.ghostsController.getPlasm()">Collecto-plasm</button>
+      </div>
     </nav>
   </header>
+
   <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
-        </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+      <div class="row" id="ghost-zone">
+        <!-- <div class="col">
+          <div class="d-flex flex-column justify-content-center bg-light rounded-top shadow ms-2 mb-4">
+            <div>
+              <img src="https://media4.giphy.com/media/fnfONXQS7MmHi2AcsJ/giphy.gif?cid=790b76112a2b403eb1b753875e606082c5ca75214189fb4e&rid=giphy.gif&ct=s" class="rounded-bottom" alt="">
+            </div>
+            <div class="bg-dark text-light rounded-bottom" >
+              <p>${this.name}</p><p>${this.price}</p>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
   </main>
@@ -37,6 +51,8 @@
       <p><small>Made with 💖 by Codeworks</small></p>
     </div>
   </footer>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

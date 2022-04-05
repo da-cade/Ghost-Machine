@@ -1,1 +1,15 @@
 /* BASIC STYLES HERE */
+
+main{
+  height: 40vh;
+}
+
+img{
+  max-height: 20vh;
+  min-height: auto;
+  object-fit: contain;
+}
+
+#ghost-label>p{
+  font-size: small;
+}
