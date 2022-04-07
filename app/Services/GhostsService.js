@@ -4,6 +4,8 @@ import { Pop } from "../Utils/Pop.js"
 
 
 let _ghostList = [{name: "Inverse Maya Angelou", title: "She never found out why the caged bird sings...", price: 28}, {name: "Dan Dillion", title: "Don't let him near your grandmother", price: 39}, {name: "Old Crab-Eyes", title: "they aren't the only thing that's crablike...", price: 31}]
+
+
 class GhostsService {
   
   makeGhosts(){
